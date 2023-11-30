@@ -2,3 +2,8 @@
 try2.py
 try.py
 New Text Document.txt
+design/__pycache__/__init__.cpython-310.pyc
+design/__pycache__/style.cpython-310.pyc
+gui/__pycache__
+gui/left_h_layout/__pycache__
+gui/right_h_layout/__pycache__
