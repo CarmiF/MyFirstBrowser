@@ -12,6 +12,7 @@ class MyWebBrowser(QMainWindow):
 
     def __init__(self, general, *args, **kwargs):
         super(MyWebBrowser, self).__init__(*args, **kwargs)
+        
         self.general = general
 
         self.current_tab_button = None

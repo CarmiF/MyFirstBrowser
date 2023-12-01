@@ -23,9 +23,9 @@ def create_new_tab(self):
 
     browser = QWebEngineView()
     browser.url = self.sender().url
+    browser.setUrl(QUrl(self.sender().url))
     self.general.browsers.append(browser)
     self.browser_stacked_window.addWidget(browser)
-    print(self.general.browsers)
     show_tab(self, new_tab, True)
 
 def check_if_tab_exists(self):
@@ -39,7 +39,6 @@ def check_if_tab_exists(self):
     
 def btn_with_url_clicked(self):
     tab = check_if_tab_exists(self)
-    print("check_if_tab_exists"+str(tab))
     if tab == False:
         create_new_tab(self)
     else:
